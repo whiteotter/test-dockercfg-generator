@@ -7,4 +7,4 @@
   service: test_app
   image_name: dkcodeship/test-dockercfg-generator
   image_tag: latest
-  dockercfg_service: dockercfg_generator
+  dockercfg_service: test_dockercfg_generator
