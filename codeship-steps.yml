@@ -1,0 +1,10 @@
+- name: run_service
+  service: test_app
+  command: true
+
+- name: push_to_docker_hub
+  type: push
+  service: test_app
+  image_name: dkcodeship/test-dockercfg-generator
+  image_tag: latest
+  dockercfg_service: dockercfg_generator

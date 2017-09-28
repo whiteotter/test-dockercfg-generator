@@ -1,0 +1,9 @@
+test_app:
+  build:
+    image: dkcodeship/test-dockercfg-generator
+    dockerfile_path: Dockerfile
+
+dockercfg_generator:
+  image: codeship/dockercfg-generator
+  add_docker: true
+  encrypted_env_file: credentials.env.encrypted
